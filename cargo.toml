@@ -1,0 +1,3 @@
+[workspace]
+members = ["hydro_core", "hydro_viz"]
+resolver = "2"
