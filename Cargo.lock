@@ -9,3 +9,6 @@ version = "0.1.0"
 [[package]]
 name = "hydro_viz"
 version = "0.1.0"
+dependencies = [
+ "hydro_core",
+]

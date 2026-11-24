@@ -4,3 +4,4 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+hydro_core = { path = "C:/Users/N I T R O/Documents/WestCliff University/2026/Fall 2, 2026/BSIT 400/HydropowerWaterHammerSimulation/hydro_core" }
