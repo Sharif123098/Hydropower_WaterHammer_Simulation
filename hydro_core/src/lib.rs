@@ -33,7 +33,7 @@ pub struct Params {
     pub length: f64,        // L, m
     pub diameter: f64,      // D, m
     pub wall: f64,          // e, m
-    pub young: f64,         // pipe E, Pa
+    pub young: f64,         // pipe E, Pa  Measures how stiff the material is
     pub bulk: f64,          // water K, Pa
     pub rho: f64,           // kg/m3
     pub roughness: f64,     // eps, m
