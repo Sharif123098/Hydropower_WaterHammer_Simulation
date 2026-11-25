@@ -16,6 +16,20 @@ pub fn joukowsky(a: f64, v: f64) -> f64 {
 /// k: water bulk modulus (Pa), rho: water density (kg/m3), d: diameter (m),
 /// e: wall thickness (m), young: pipe Young's modulus (Pa),
 /// c1: anchoring factor (1.0 is a good starting value).
+
+
+
+
+// Variable	If it increases...	                Effect on wave speed
+// k	    Water becomes harder to compress	Generally increases
+// rho	    Water becomes denser	            Decreases
+// d	    Pipe becomes wider	                Decreases
+// e	    Pipe wall becomes thicker	        Increases
+// young	Pipe becomes stiffer	            Increases
+// c1	    Restraint correction increases	    Decreases
+
+
+
 pub fn wave_speed(k: f64, rho: f64, d: f64, e: f64, young: f64, c1: f64) -> f64 {
     (k / rho).sqrt() / (1.0 + (k * d) / (young * e) * c1).sqrt()
 }
